@@ -1,93 +1,25 @@
-<?php require_once 'config.php'; ?>	
-<?php require_once DBAPI; ?>	
-<?php include(HEADER_TEMPLATE); ?>	
-<?php $db = open_database(); ?>	
-<h1>Trabalho CRUD</h1>	<hr />	
-<?php if ($db) : ?>	
-	<div class="row">		
-		<div class="col-xs-6 col-sm-3 col-md-2">			
-			<a href="customers/add.php" class="btn btn-primary">				
-				<div class="row">					
-					<div class="col-xs-12 text-center">						
-						<i class="fa fa-plus fa-5x"></i>					
-					</div>					
-					<div class="col-xs-12 text-center">						
-						<p> Novo Funcionário</p>					
-					</div>				
-				</div>			
-			</a>		
-		</div>	
-		<div class="col-xs-6 col-sm-3 col-md-2">			
-			<a href="customers" class="btn btn-default">				
-				<div class="row">					
-					<div class="col-xs-12 text-center">						
-						<i class="fa fa-user fa-5x"></i>					
-					</div>					
-					<div class="col-xs-12 text-center">						
-						<p>Funcionário</p>					
-					</div>				
-				</div>			
-			</a>		
-		</div>	
-	</div>	
-	<hr />
-	<div class="row">		
-		<div class="col-xs-6 col-sm-3 col-md-2">			
-			<a href="customers/addRegiao.php" class="btn btn-primary">				
-				<div class="row">					
-					<div class="col-xs-12 text-center">						
-						<i class="fa fa-plus fa-5x"></i>					
-					</div>					
-					<div class="col-xs-12 text-center">						
-						<p> Nova Região    </p>					
-					</div>				
-				</div>			
-			</a>		
-		</div>	
-		<div class="col-xs-6 col-sm-3 col-md-2">			
-			<a href="customers/regiao.php" class="btn btn-default">				
-				<div class="row">					
-					<div class="col-xs-12 text-center">						
-						<i class="fa fa-user fa-5x"></i>					
-					</div>					
-					<div class="col-xs-12 text-center">						
-						<p>Região</p>					
-					</div>				
-				</div>			
-			</a>		
-		</div>	
-	</div>
-	<hr />
-	<div class="row">		
-		<div class="col-xs-6 col-sm-3 col-md-2">			
-			<a href="customers/addTerritorio.php" class="btn btn-primary">				
-				<div class="row">					
-					<div class="col-xs-12 text-center">						
-						<i class="fa fa-plus fa-5x"></i>					
-					</div>					
-					<div class="col-xs-12 text-center">						
-						<p> Novo Território</p>					
-					</div>				
-				</div>			
-			</a>		
-		</div>	
-		<div class="col-xs-6 col-sm-3 col-md-2">			
-			<a href="customers/territorio.php" class="btn btn-default">				
-				<div class="row">					
-					<div class="col-xs-12 text-center">						
-						<i class="fa fa-user fa-5x"></i>					
-					</div>					
-					<div class="col-xs-12 text-center">						
-						<p>Território</p>					
-					</div>				
-				</div>			
-			</a>		
-		</div>	
-	</div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<?php else : ?>		
-	<div class="alert alert-danger" role="alert">			
-		<p><strong>ERRO:</strong> Não foi possível Conectar ao Banco de Dados!</p>		
-	</div>	
-<?php endif; ?>	
-<?php include(FOOTER_TEMPLATE); ?>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
