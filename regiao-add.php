@@ -7,10 +7,10 @@
     $nome = $_POST["descricao"];
 
     if (insereregiao($conexao, $nome)) { ?>
-        <p class="text-success">O produto <?=$nome?>, foi adicionado com sucesso!</p>
+        <p class="text-success">A região <?=$nome?>, foi adicionada com sucesso!</p>
     <?php } else {
         $msg = mysqli_error($conexao);?>
-        <p class="text-danger">O produto <?=$nome?>, não foi adicionado no banco de dados: <?=$msg?></p>
+        <p class="text-danger">A região <?=$nome?>, não foi adicionada no banco de dados: <?=$msg?></p>
     <?php }
 
 ?>

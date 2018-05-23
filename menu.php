@@ -5,10 +5,10 @@
         </div>
         <div>
             <ul class="nav navbar-nav">
-                <li><a href="funcionario.php">Funcionário</a></li>
+                <li><a href="funcionario-lista.php">Funcionário</a></li>
                 <li><a href="regiao-lista.php">Região</a></li>
-                <li><a href="territorio.php">Território</a></li>
-                <li><a href="func-territorio.php">Funcionário - Território</a></li>                
+                <li><a href="territorio-lista.php">Território</a></li>
+                <li><a href="func-territorio-lista.php">Funcionário - Território</a></li>                
             <ul>            
         </div>
     </div>
