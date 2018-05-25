@@ -19,7 +19,7 @@
     }
 
     function alterafuncterritorio($conn,$id,$idr) {
-        $query = "update funcionarios_territorios set DescricaoTerritorio = '{$nome}', IDRegiao = {$idr} where IDFuncionario = {$id}";
+        $query = "update funcionarios_territorios set IDTerritorio = {$idr} where IDFuncionario = {$id}";
         return mysqli_query($conn, $query);
     }
 

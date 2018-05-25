@@ -15,7 +15,7 @@
     <table>
         
         <tr>
-            <td>Descrição</td>
+            <td>Descrição </td>
             <td><textarea class="form-control" name="descricao" ><?=$regiao['DescricaoRegiao']?></textarea></td>
         </tr>        
 

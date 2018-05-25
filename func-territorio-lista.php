@@ -5,7 +5,7 @@
 ?>
 
 <?php if (array_key_exists("removido", $_GET) && $_GET["removido"]==true) { ?>
-    <p class="alert-success">Funcionário-Território <?=$_GET['territorio']?> foi removido com sucesso!</p>
+    <p class="alert-success">Funcionário-Território foi removido com sucesso!</p>
 <?php } ?>
 
 <tr>

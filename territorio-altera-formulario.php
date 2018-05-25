@@ -15,12 +15,12 @@
     <table>
         
         <tr>
-            <td>Descrição</td>
+            <td>Descrição </td>
             <td><textarea class="form-control" name="descricao" ><?=$territorio['DescricaoTerritorio']?></textarea></td>
         </tr> 
 
         <tr>
-            <td>ID Região</td>
+            <td>ID Região </td>
             <td><textarea class="form-control" name="idr" ><?=$territorio['IDRegiao']?></textarea></td>
         </tr>         
 
