@@ -10,7 +10,7 @@
 
 <tr>
 <td>
-<a class="btn btn-primary" href="funcionario-formulario.php">Cadastrar Funcionário</a> <!-- chama no cadastro -->
+<a class="btn waves-effect waves-light" href="funcionario-formulario.php">Cadastrar Funcionário<i class="tiny material-icons">add</i></a> <!-- chama no cadastro -->
 </td>
 </tr>
 
@@ -42,13 +42,12 @@
             <td><?=$funcionario['Cidade']?></td>
             <td><?=$funcionario['Pais']?></td>
 
-            <td>
-            
-                <a class="btn btn-primary" href="funcionario-altera-formulario.php?IDFuncionario=<?=$funcionario['IDFuncionario']?>">Alterar</a>
+            <td>        
+                <a class="btn waves-effect waves-light" href="funcionario-altera-formulario.php?IDFuncionario=<?=$funcionario['IDFuncionario']?>">Alterar <i class="tiny material-icons">edit</i></a>
 
                 <form action="funcionario-remove.php" method="post">
                     <input type="hidden" name="id" value="<?=$funcionario['IDFuncionario']?>" />
-                    <button class="btn btn-danger">Remover</button>
+                    <button class="btn waves-effect waves-light">Remover<i class="tiny material-icons">clear</i></button>
                 </form>
             </td>
         </tr>

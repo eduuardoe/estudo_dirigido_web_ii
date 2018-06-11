@@ -10,7 +10,7 @@
 
 <tr>
 <td>
-<a class="btn btn-primary" href="territorio-formulario.php">Cadastrar Território</a> <!-- chama no cadastro -->
+<a class="btn waves-effect waves-light" href="territorio-formulario.php">Cadastrar Território<i class="tiny material-icons">add</i></a> <!-- chama no cadastro -->
 </td>
 </tr>
 
@@ -30,12 +30,13 @@
             <td><?=$territorio['DescricaoTerritorio']?></td>
             <td><?=$territorio['DescricaoRegiao']?></td>
             <td>
-            
-                <a class="btn btn-primary" href="territorio-altera-formulario.php?IDTerritorio=<?=$territorio['IDTerritorio']?>">Alterar</a>
+
+                <a class="btn waves-effect waves-light" href="territorio-altera-formulario.php?IDTerritorio=<?=$territorio['IDTerritorio']?>">Alterar <i class="tiny material-icons">edit</i></a>
+
 
                 <form action="territorio-remove.php" method="post">
                     <input type="hidden" name="id" value="<?=$territorio['IDTerritorio']?>" />
-                    <button class="btn btn-danger">Remover</button>
+                    <button class="btn waves-effect waves-light">Remover<i class="tiny material-icons">clear</i></button>
                 </form>
             </td>
         </tr>

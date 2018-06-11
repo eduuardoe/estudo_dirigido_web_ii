@@ -7,7 +7,7 @@
     $regiaos = listaRegiaos($conexao);
 ?>
 
-<h1>Cadastro de Território</h1>
+<h3>Cadastro de Território</h3>
 
 <form action="territorio-add.php" method="post">
     <table>
@@ -20,16 +20,10 @@
             <td>Descrição</td>
             <td><textarea class="form-control" name="descricao"></textarea></td>
         </tr>
-
-       <!-- <tr>
-            <td>ID Região</td>
-            <td><textarea class="form-control" name="idr"></textarea></td>
-        </tr> -->
-    
         <tr>
             <td>Região</td>
             <td>
-                <select name="idr">
+                <select name="idr" class="browser-default">
                     <?php foreach ($regiaos as $regiao) {
                     ?>
                         <option value="<?=$regiao['IDRegiao']?>"><?=$regiao["DescricaoRegiao"]?></option>
@@ -40,7 +34,7 @@
 
         <tr>
             <td>
-                <button class="btn btn-primary" type="submit">Cadastrar</button>
+                <button class="btn waves-effect waves-light" type="submit">Cadastrar<i class="material-icons right">send</i></button>
             </td>
         </tr>
     </table>

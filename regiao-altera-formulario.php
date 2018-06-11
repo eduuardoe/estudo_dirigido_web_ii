@@ -8,14 +8,14 @@
  
 ?>
 
-<h1>Alteração de Região Cadastrado</h1>
+<h3>Alteração de Região Cadastrado</h3>
 
 <form action="regiao-altera.php" method="post">
     <input type="hidden" name="id" value="<?=$id?>" />
     <table>
         
         <tr>
-            <td>Descrição </td>
+            <td>Descrição</td>
             <td><textarea class="form-control" name="descricao" ><?=$regiao['DescricaoRegiao']?></textarea></td>
         </tr>        
 

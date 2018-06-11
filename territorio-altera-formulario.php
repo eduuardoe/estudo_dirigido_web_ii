@@ -8,19 +8,19 @@
  
 ?>
 
-<h1>Alteração de Território Cadastrado</h1>
+<h3>Alteração de Território Cadastrado</h3>
 
 <form action="territorio-altera.php" method="post">
     <input type="hidden" name="id" value="<?=$id?>" />
     <table>
         
         <tr>
-            <td>Descrição </td>
+            <td>Descrição</td>
             <td><textarea class="form-control" name="descricao" ><?=$territorio['DescricaoTerritorio']?></textarea></td>
         </tr> 
 
         <tr>
-            <td>ID Região </td>
+            <td>ID Região</td>
             <td><textarea class="form-control" name="idr" ><?=$territorio['IDRegiao']?></textarea></td>
         </tr>         
 

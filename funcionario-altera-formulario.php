@@ -8,7 +8,7 @@
  
 ?>
 
-<h1>Alteração de Funcionário Cadastrado</h1>
+<h3>Alteração de Funcionário Cadastrado</h3>
 
 <form action="funcionario-altera.php" method="post">
     <input type="hidden" name="id" value="<?=$id?>" />

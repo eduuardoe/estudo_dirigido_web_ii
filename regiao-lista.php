@@ -10,7 +10,7 @@
 
 <tr>
 <td>
-<a class="btn btn-primary" href="regiao-formulario.php">Cadastrar Região</a> <!-- chama no cadastro -->
+<a class="btn waves-effect waves-light" href="regiao-formulario.php">Cadastrar Região<i class="tiny material-icons">add</i></a> <!-- chama no cadastro -->
 </td>
 </tr>
 
@@ -29,13 +29,14 @@
             <td><?=$regiao['DescricaoRegiao']?></td>
             <td>
             
-                <a class="btn btn-primary" href="regiao-altera-formulario.php?IDRegiao=<?=$regiao['IDRegiao']?>">Alterar</a>
+                <a class="btn waves-effect waves-light" href="regiao-altera-formulario.php?IDRegiao=<?=$regiao['IDRegiao']?>">Alterar <i class="tiny material-icons">edit</i></a>
+
 
                 <form action="regiao-remove.php" method="post">
                     <input type="hidden" name="id" value="<?=$regiao['IDRegiao']?>" />
-                    <button class="btn btn-danger">Remover</button>
+                    <button class="btn waves-effect waves-light">Remover<i class="tiny material-icons">clear</i></button>
                 </form>
-            </td>
+           </td>
         </tr>
     <?php
         endforeach;

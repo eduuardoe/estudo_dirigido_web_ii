@@ -1,15 +1,17 @@
+
 <?php
     include_once("cabecalho.php");
     include_once("conecta.php");
     include_once("territorio-banco.php");
     include_once("funcionario-banco.php");
     include_once("func-territorio-banco.php");
+    
 
     $territorios = listaterritorios($conexao);
     $funcionarios = listafuncionarios($conexao);
 ?>
 
-<h1>Cadastro de Funcionário-Território</h1>
+<h3>Cadastro de Funcionário-Território</h3>
 
 <form action="func-territorio-add.php" method="post">
     <table>
@@ -17,7 +19,7 @@
         <tr>
             <td>Funcionário</td>
             <td>
-                <select name="id">
+                <select name="id" class="browser-default">
                     <?php foreach ($funcionarios as $funcionario) {
                     ?>
                         <option value="<?=$funcionario['IDFuncionario']?>"><?=$funcionario["Nome"]?></option>
@@ -29,7 +31,7 @@
         <tr>
             <td>Território</td>
             <td>
-                <select name="idt">
+                <select name="idt" class="browser-default">
                     <?php foreach ($territorios as $territorio) {
                     ?>
                         <option value="<?=$territorio['IDTerritorio']?>"><?=$territorio["DescricaoTerritorio"]?></option>
@@ -39,9 +41,11 @@
         </tr>
 
         <tr>
-            <td>
-                <button class="btn btn-primary" type="submit">Cadastrar</button>
+            <td>                
+                <button class="btn waves-effect waves-light" type="submit">Cadastrar<i class="material-icons right">send</i></button>
             </td>
         </tr>
+        
     </table>
+  
 </form>

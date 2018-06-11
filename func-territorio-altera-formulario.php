@@ -16,7 +16,7 @@
     
 ?>
 
-<h1>Alteração de Funcionário - Território Cadastrado</h1>
+<h3>Alteração de Funcionário - Território Cadastrado</h3>
 
 <form action="func-territorio-altera.php" method="post">
     <input type="hidden" name="id" value="<?=$id?>" />
@@ -27,14 +27,10 @@
             <td><textarea class="form-control" name="id" readonly="true"><?=$func['Nome']?></textarea></td>
         </tr> 
 
-       <!-- <tr>
-            <td>Território</td>
-            <td><textarea class="form-control" name="idt2" ><//?=$territorio['DescricaoTerritorio']?></textarea></td>
-        </tr>         -->
         <tr>
             <td>Território</td>
             <td>
-                <select name="idt">
+                <select name="idt" class="browser-default">
                     <?php foreach ($territorios as $territorio) {
                     ?>
                         <option value="<?=$territorio['IDTerritorio']?>"><?=$territorio["DescricaoTerritorio"]?></option>
